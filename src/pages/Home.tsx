@@ -53,7 +53,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-dusty-50 via-ivory-100 to-taupe-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-light-purple-50 via-light-purple-100 to-purple-50" />
         
         {/* Background flowers */}
         <div className="absolute inset-0 opacity-30">
@@ -78,7 +78,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg"
-                className="bg-dusty hover:bg-dusty-600 text-white font-jakarta font-medium text-lg px-8 py-4"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-jakarta font-medium text-lg px-8 py-4"
                 onClick={() => navigate('/bouquets')}
               >
                 Explore Bouquets
@@ -86,7 +86,7 @@ const Home = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-forest text-forest hover:bg-forest hover:text-white font-jakarta font-medium text-lg px-8 py-4"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-jakarta font-medium text-lg px-8 py-4"
                 onClick={() => navigate('/weddings')}
               >
                 Weddings & Events
@@ -97,10 +97,10 @@ const Home = () => {
 
         {/* Floating decorative elements */}
         <div className="absolute top-20 left-10 animate-float">
-          <Heart className="h-8 w-8 text-dusty/40" />
+          <Heart className="h-8 w-8 text-accent/40" />
         </div>
         <div className="absolute bottom-32 right-16 animate-float" style={{ animationDelay: '1s' }}>
-          <Sparkles className="h-6 w-6 text-forest/40" />
+          <Sparkles className="h-6 w-6 text-primary/40" />
         </div>
       </section>
 
@@ -142,12 +142,12 @@ const Home = () => {
                     {bouquet.description}
                   </p>
                   <div className="flex justify-between items-center">
-                    <span className="font-jakarta font-semibold text-forest text-lg">
+                    <span className="font-jakarta font-semibold text-primary text-lg">
                       {bouquet.price}
                     </span>
                     <Button 
                       size="sm"
-                      className="bg-dusty hover:bg-dusty-600 text-white font-jakarta"
+                      className="bg-accent hover:bg-accent/90 text-accent-foreground font-jakarta"
                     >
                       Order Now
                     </Button>
@@ -160,7 +160,7 @@ const Home = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-ivory-100">
+      <section className="py-20 bg-light-purple-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -180,7 +180,7 @@ const Home = () => {
               </p>
               <Button 
                 variant="outline"
-                className="border-forest text-forest hover:bg-forest hover:text-white font-jakarta font-medium"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-jakarta font-medium"
                 onClick={() => navigate('/about')}
               >
                 Learn More About Us
@@ -193,7 +193,7 @@ const Home = () => {
                   alt="Florist at work"
                   className="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-dusty/20 rounded-full animate-float" />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-full animate-float" />
               </div>
             </div>
           </div>
@@ -217,8 +217,8 @@ const Home = () => {
               <Card key={index} className="border-border hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Heart className="h-5 w-5 text-dusty mr-2" />
-                    <span className="font-jakarta text-sm font-medium text-forest">
+                    <Heart className="h-5 w-5 text-accent mr-2" />
+                    <span className="font-jakarta text-sm font-medium text-primary">
                       {testimonial.occasion}
                     </span>
                   </div>
@@ -236,7 +236,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-dusty-100 to-ivory-200">
+      <section className="py-20 bg-gradient-to-r from-light-purple-100 to-purple-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-playfair text-4xl sm:text-5xl font-bold text-foreground mb-6">
             Ready to Say It With Flowers?
@@ -247,7 +247,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              className="bg-forest hover:bg-forest-600 text-white font-jakarta font-medium text-lg px-8 py-4"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-jakarta font-medium text-lg px-8 py-4"
               onClick={() => window.open('https://wa.me/254700000000', '_blank')}
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -256,7 +256,7 @@ const Home = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="border-dusty text-dusty hover:bg-dusty hover:text-white font-jakarta font-medium text-lg px-8 py-4"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-jakarta font-medium text-lg px-8 py-4"
               onClick={() => navigate('/contact')}
             >
               Contact Us

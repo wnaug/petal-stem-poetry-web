@@ -3,87 +3,87 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Boutique floral design system with soft, romantic colors */
+/* Minimal purple boutique design system */
 
 @layer base {
   :root {
-    --background: 254 254 254; /* ivory-50 */
-    --foreground: 89 81 75; /* taupe-900 */
+    --background: 252 250 255; /* very light purple */
+    --foreground: 71 39 117; /* dark purple */
 
-    --card: 254 254 254; /* ivory-50 */
-    --card-foreground: 89 81 75; /* taupe-900 */
+    --card: 252 250 255; /* very light purple */
+    --card-foreground: 71 39 117; /* dark purple */
 
-    --popover: 254 254 254; /* ivory-50 */
-    --popover-foreground: 89 81 75; /* taupe-900 */
+    --popover: 252 250 255; /* very light purple */
+    --popover-foreground: 71 39 117; /* dark purple */
 
-    --primary: 51 149 51; /* forest green */
-    --primary-foreground: 254 254 254; /* ivory-50 */
+    --primary: 124 58 237; /* purple */
+    --primary-foreground: 252 250 255; /* very light purple */
 
-    --secondary: 244 237 228; /* ivory-500 */
-    --secondary-foreground: 32 96 32; /* forest-700 */
+    --secondary: 245 243 255; /* light purple */
+    --secondary-foreground: 91 33 182; /* medium purple */
 
-    --muted: 244 237 228; /* ivory-500 */
-    --muted-foreground: 131 119 105; /* taupe-700 */
+    --muted: 245 243 255; /* light purple */
+    --muted-foreground: 139 92 246; /* medium purple */
 
-    --accent: 212 122 97; /* dusty pink */
-    --accent-foreground: 254 254 254; /* ivory-50 */
+    --accent: 147 51 234; /* vibrant purple */
+    --accent-foreground: 252 250 255; /* very light purple */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 230 225 218; /* taupe-200 */
-    --input: 230 225 218; /* taupe-200 */
-    --ring: 51 149 51; /* forest green */
+    --border: 237 233 254; /* subtle purple border */
+    --input: 237 233 254; /* subtle purple border */
+    --ring: 124 58 237; /* purple */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 254 254 254; /* ivory-50 */
-    --sidebar-foreground: 89 81 75; /* taupe-900 */
-    --sidebar-primary: 51 149 51; /* forest green */
-    --sidebar-primary-foreground: 254 254 254; /* ivory-50 */
-    --sidebar-accent: 244 237 228; /* ivory-500 */
-    --sidebar-accent-foreground: 32 96 32; /* forest-700 */
-    --sidebar-border: 230 225 218; /* taupe-200 */
-    --sidebar-ring: 51 149 51; /* forest green */
+    --sidebar-background: 252 250 255; /* very light purple */
+    --sidebar-foreground: 71 39 117; /* dark purple */
+    --sidebar-primary: 124 58 237; /* purple */
+    --sidebar-primary-foreground: 252 250 255; /* very light purple */
+    --sidebar-accent: 245 243 255; /* light purple */
+    --sidebar-accent-foreground: 91 33 182; /* medium purple */
+    --sidebar-border: 237 233 254; /* subtle purple border */
+    --sidebar-ring: 124 58 237; /* purple */
   }
 
   .dark {
-    --background: 32 96 32; /* forest-700 */
-    --foreground: 254 254 254; /* ivory-50 */
+    --background: 71 39 117; /* dark purple */
+    --foreground: 252 250 255; /* very light purple */
 
-    --card: 32 96 32; /* forest-700 */
-    --card-foreground: 254 254 254; /* ivory-50 */
+    --card: 71 39 117; /* dark purple */
+    --card-foreground: 252 250 255; /* very light purple */
 
-    --popover: 32 96 32; /* forest-700 */
-    --popover-foreground: 254 254 254; /* ivory-50 */
+    --popover: 71 39 117; /* dark purple */
+    --popover-foreground: 252 250 255; /* very light purple */
 
-    --primary: 212 122 97; /* dusty pink */
-    --primary-foreground: 254 254 254; /* ivory-50 */
+    --primary: 147 51 234; /* vibrant purple */
+    --primary-foreground: 252 250 255; /* very light purple */
 
-    --secondary: 26 121 38; /* forest-600 */
-    --secondary-foreground: 254 254 254; /* ivory-50 */
+    --secondary: 91 33 182; /* medium purple */
+    --secondary-foreground: 252 250 255; /* very light purple */
 
-    --muted: 26 121 38; /* forest-600 */
-    --muted-foreground: 176 161 147; /* taupe-500 */
+    --muted: 91 33 182; /* medium purple */
+    --muted-foreground: 196 181 253; /* light purple */
 
-    --accent: 212 122 97; /* dusty pink */
-    --accent-foreground: 254 254 254; /* ivory-50 */
+    --accent: 147 51 234; /* vibrant purple */
+    --accent-foreground: 252 250 255; /* very light purple */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 26 121 38; /* forest-600 */
-    --input: 26 121 38; /* forest-600 */
-    --ring: 212 122 97; /* dusty pink */
+    --border: 91 33 182; /* medium purple */
+    --input: 91 33 182; /* medium purple */
+    --ring: 147 51 234; /* vibrant purple */
 
-    --sidebar-background: 32 96 32; /* forest-700 */
-    --sidebar-foreground: 254 254 254; /* ivory-50 */
-    --sidebar-primary: 212 122 97; /* dusty pink */
-    --sidebar-primary-foreground: 254 254 254; /* ivory-50 */
-    --sidebar-accent: 26 121 38; /* forest-600 */
-    --sidebar-accent-foreground: 254 254 254; /* ivory-50 */
-    --sidebar-border: 26 121 38; /* forest-600 */
-    --sidebar-ring: 212 122 97; /* dusty pink */
+    --sidebar-background: 71 39 117; /* dark purple */
+    --sidebar-foreground: 252 250 255; /* very light purple */
+    --sidebar-primary: 147 51 234; /* vibrant purple */
+    --sidebar-primary-foreground: 252 250 255; /* very light purple */
+    --sidebar-accent: 91 33 182; /* medium purple */
+    --sidebar-accent-foreground: 252 250 255; /* very light purple */
+    --sidebar-border: 91 33 182; /* medium purple */
+    --sidebar-ring: 147 51 234; /* vibrant purple */
   }
 }
 
@@ -104,7 +104,7 @@
 /* Custom styles for the boutique aesthetic */
 @layer components {
   .poetry-text {
-    @apply font-playfair italic text-dusty-600;
+    @apply font-playfair italic text-purple-600;
   }
   
   .floating-petal {

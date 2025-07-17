@@ -116,7 +116,7 @@ const Bouquets = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Header */}
-      <section className="py-20 bg-gradient-to-br from-ivory-50 to-dusty-50">
+      <section className="py-20 bg-gradient-to-br from-light-purple-50 to-purple-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-5xl sm:text-6xl font-bold text-foreground mb-6">
             Our Bouquet Collection
@@ -139,8 +139,8 @@ const Bouquets = () => {
                   variant={selectedCategory === category.id ? "default" : "outline"}
                   className={`font-jakarta font-medium ${
                     selectedCategory === category.id 
-                      ? "bg-forest text-white hover:bg-forest-600" 
-                      : "border-forest text-forest hover:bg-forest hover:text-white"
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90" 
+                      : "border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   }`}
                   onClick={() => setSelectedCategory(category.id)}
                 >
@@ -183,7 +183,7 @@ const Bouquets = () => {
 
                   {/* Category badge */}
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-white/90 text-forest font-jakarta font-medium">
+                    <Badge className="bg-white/90 text-primary font-jakarta font-medium">
                       {categories.find(cat => cat.id === bouquet.category)?.name}
                     </Badge>
                   </div>
@@ -198,14 +198,14 @@ const Bouquets = () => {
                   </p>
                   
                   <div className="flex justify-between items-center mb-4">
-                    <span className="font-jakarta font-bold text-forest text-xl">
+                    <span className="font-jakarta font-bold text-primary text-xl">
                       {bouquet.price}
                     </span>
                     <div className="flex gap-2">
                       <Button 
                         size="sm"
                         variant="outline"
-                        className="border-dusty text-dusty hover:bg-dusty hover:text-white font-jakarta"
+                        className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-jakarta"
                         onClick={() => window.open('https://wa.me/254700000000', '_blank')}
                       >
                         <Phone className="h-4 w-4 mr-1" />
@@ -213,7 +213,7 @@ const Bouquets = () => {
                       </Button>
                       <Button 
                         size="sm"
-                        className="bg-dusty hover:bg-dusty-600 text-white font-jakarta"
+                        className="bg-accent hover:bg-accent/90 text-accent-foreground font-jakarta"
                       >
                         Order Now
                       </Button>
@@ -227,7 +227,7 @@ const Bouquets = () => {
       </section>
 
       {/* Custom Quote Section */}
-      <section className="py-20 bg-dusty-50">
+      <section className="py-20 bg-purple-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-playfair text-4xl font-bold text-foreground mb-6">
             Don't See What You're Looking For?
@@ -238,7 +238,7 @@ const Bouquets = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              className="bg-forest hover:bg-forest-600 text-white font-jakarta font-medium"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-jakarta font-medium"
               onClick={() => window.open('https://wa.me/254700000000', '_blank')}
             >
               <Phone className="mr-2 h-5 w-5" />
@@ -247,7 +247,7 @@ const Bouquets = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="border-dusty text-dusty hover:bg-dusty hover:text-white font-jakarta font-medium"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-jakarta font-medium"
             >
               Contact Us
             </Button>
